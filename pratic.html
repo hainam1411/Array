@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Tổng các phần tử chẵn
+    // let array = [1,7,5,9,2,6];
+    // let sum = 0;
+    // for (let i = 0; i < array.length; i++) {
+    //   if (array[i]%2===0){
+    //     sum += array[i];
+    //   }
+    // }
+    // console.log(sum);
+
+
+    //TỔNG CÁC PHẦN TỬ LỚN HƠN 10
+    // let array = [1,7,5,9,2,6]
+    // sum = 0;
+    // for (let i = 0; i < array.length; i++) {
+    //     if (array[i]>10){
+    //         sum +=array[i];
+    //     }else {
+    //         alert("Không có phần tử nào trong mảng lớn hơn 0");
+    //         break;
+    //     }
+    // }
+
+    //TỔNG CÁC PHẦN TỬ CHIA 7 DƯ 2
+
+    // let array = [1,7,5,9,2,6]
+    // sum = 0;
+    // for (let i = 0; i < array.length; i++) {
+    //     if (array[i]%7===2){
+    //         sum += array[i];
+    //     }
+    // } console.log(sum);
+
+    // IN RA MAX CÁC PHẦN T CHẴN TRONG MẢNG
+    // let array = [1,7,5,9,2,6];
+    // let max = array[0];
+    // for (let i = 0; i < array.length; i++) {
+    //     if (array[i]%2===0 && array[i]>max){
+    //         max = array[i]
+    //     }
+    // }
+    // console.log(max);
+
+    //In ra lớn nhất của mảng
+    // let array = [1,7,5,9,2,6];
+    // let max = array[0];
+    // for (let i = 0; i < array.length; i++) {
+    //     if (array[i]%2===0 && array[i]>max){
+    //         max = array[i]
+    //     }
+    // }
+    // console.log(max);
+
+    //IN RA MAX CỦA MẢNG
+    // let array = [1,7,5,9,2,6];
+    // let max = array[0];
+    // for (let i = 0; i < array.length; i++) {
+    //     if ( array[i]>max){
+    //         max = array[i]
+    //     }
+    // }
+    // console.log(max);
+
+    // IN RA CÁC PHẦN TỬ CHIA HẾT CHO 5 TRONG MẢNG
+    let array = [1,7,5,9,2,6];
+    for (let i = 0; i < array.length; i++) {
+        if ( array[i]%5===0){
+            console.log(array[i]);
+        }
+    }
+
+    //TRUNG BÌNH CÁC PHẦN TỬ CHIA HẾT CHO 5
+    let array = [1, 7, 5, 9, 2, 6, 20];
+    sum = 0
+    let count = 0;
+    let tb = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 5 === 0) {
+            sum += array[i];
+            count++
+        }
+        tb = sum /count;
+    }
+    console.log(tb);
+
+
+</script>
+</body>
+</html>

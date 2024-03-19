@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Slack</title>
+</head>
+<body>
+
+<script>
+    //In ra các phần tử trong mảng
+// let arr = [1,7,5,9,2,6,7,9,7];
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+
+    //in ra các phần tử chẵn trong mảng
+    // let arr = [1,7,5,9,2,6,7,9,7];
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i]%2===0){
+    //         console.log(arr[i]);
+    //     }
+    // }
+
+
+    //In ra các phần tử ở vị trí chẵn trong mảng
+    let arr = [1,7,5,9,2,6,7,9,7];
+    for (let i =0; i < arr.length; i+=2) {
+        console.log(arr[i]);
+    }
+
+    //Cho người dùng nhập vào 1 số và in ra số lần xuất hiện
+    let arr = [1,7,5,9,2,6,7,9,7];
+    let a = +prompt("Nhập vào số cần tìm: ");
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i]===a){
+            count++;
+        }
+    }
+    alert( 'số '+a+' nhập vào xuất hiện '+count+' lần');
+</script>
+</body>
+</html>
